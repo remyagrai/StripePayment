@@ -26,7 +26,7 @@ if not PUBLISHABLE_SECRET_KEY:
 stripe.api_key = STRIPE_SECRET_KEY
 
 # Provide your domain name here
-YOUR_DOMAIN = 'http://localhost:5000'
+YOUR_DOMAIN = 'http://localhost:8000'
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -68,6 +68,6 @@ def charge():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
